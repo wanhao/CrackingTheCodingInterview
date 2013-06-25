@@ -4,23 +4,23 @@ public class Q2_2 {
   
   
   public static void main(String[] args) {
-    Node heada=new Node(6);
-    heada.addToTrail(new Node(5));
-    heada.addToTrail(new Node(4));
-    heada.addToTrail(new Node(3));
-    heada.addToTrail(new Node(2));
-    heada.addToTrail(new Node(1));
+    Node head=new Node(6);
+    head.addToTrail(new Node(5));
+    head.addToTrail(new Node(4));
+    head.addToTrail(new Node(3));
+    head.addToTrail(new Node(2));
+    head.addToTrail(new Node(1));
     
-    Node result=getKth(heada,0);
+    Node result=getKth(head,0);
     System.out.println(result==null?"null":""+result.data);
 
-    result=getKth(heada,3);
+    result=getKth(head,3);
     System.out.println(result==null?"null":""+result.data);
 
-    result=getKth(heada,6);
+    result=getKth(head,6);
     System.out.println(result==null?"null":""+result.data);
 
-    result=getKth(heada,7);
+    result=getKth(head,7);
     System.out.println(result==null?"null":""+result.data);
 
   }
