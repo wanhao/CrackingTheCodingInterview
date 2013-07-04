@@ -6,7 +6,9 @@ import java.util.Stack;
 public class Q3_3 {
 
   public static void main(String[] args) {
-    
+    String a="abc";
+    String b="abc";
+    System.out.println(a==b);
     
   }
   
