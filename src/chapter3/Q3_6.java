@@ -31,7 +31,7 @@ public class Q3_6 {
 
     while (!stack.isEmpty()) {
       tmp1 = stack.peek();
-      while (!buffer.isEmpty() && (tmp2 = buffer.peek()) > tmp1) {
+      while (!buffer.isEmpty() && buffer.peek() > tmp1) {
         stack.push(buffer.pop());
       }
       buffer.push(tmp1);
