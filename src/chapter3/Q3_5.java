@@ -10,18 +10,18 @@ public class Q3_5 {
   public static void main(String[] args) {
     MyQueue<Integer> queue=new MyQueue<Integer>();
     
-    queue.add(1);
-    queue.add(2);
-    queue.add(3);
-    queue.add(4);
-    queue.add(5);
-    System.out.println(queue.remove());
-    System.out.println(queue.remove());
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.enqueue(3);
+    queue.enqueue(4);
+    queue.enqueue(5);
+    System.out.println(queue.dequeue());
+    System.out.println(queue.dequeue());
     
-    queue.add(6);
-    queue.add(7);
+    queue.enqueue(6);
+    queue.enqueue(7);
     while(!queue.isEmpty()){      
-      System.out.println(queue.remove());
+      System.out.println(queue.dequeue());
     }
   }
 
@@ -29,11 +29,11 @@ public class Q3_5 {
     private Stack<E> in = new Stack<E>();
     private Stack<E> out = new Stack<E>();
 
-    public void add(E item) {
+    public void enqueue(E item) {
       in.push(item);
     }
 
-    public E remove() {
+    public E dequeue() {
       if(out.isEmpty()){
         while(!in.isEmpty()){
           out.push(in.pop());
